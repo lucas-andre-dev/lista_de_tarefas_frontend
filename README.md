@@ -158,9 +158,9 @@ Este projeto foi desenvolvido para fins de avaliação técnica em processo sele
 ## 👨‍💻 Desenvolvedor
 
 **Lucas André* - Candidato à vaga de Estágio em Desenvolvimento Web
-- GitHub:  https://github.com/lucas-andre-dev?tab=repositories
+- GitHub:   https://github.com/lucas-andre-dev?tab=repositories
 - LinkedIn: https://www.linkedin.com/in/lucas-andr%C3%A9-3351381a0/
-- Email: lucasandrecardoso@hotmail.com
+- Email:    lucasandrecardoso@hotmail.com
 
 ---
 
