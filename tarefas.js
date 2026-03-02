@@ -148,7 +148,7 @@ async function salvarTarefa(e) {
     const LIMITE_MAXIMO = 999999999999.99;
 
     if (custo > LIMITE_MAXIMO) {
-        alert('O Limite maximo de custo é R$ 99.999.999,99.Informe um valor menor.');
+        alert('O Limite maximo de custo é R$ 99.999.999,99\nInforme um valor menor.');
         return;
     }
 
