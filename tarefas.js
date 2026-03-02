@@ -103,6 +103,9 @@ function abrirModalIncluir() {
     modalTitulo.textContent = 'Adicionar Tarefa';
     formModal.reset();
     modal.style.display = 'block';
+    setTimeout(() => {
+    document.getElementById('nome_tarefa').focus();
+}, 0);
 }
 
 function prepararEdicao(tarefa) {
@@ -115,6 +118,8 @@ function prepararEdicao(tarefa) {
     document.getElementById('data_limite').value = tarefa.data_limite;
     
     modal.style.display = 'block';
+    setTimeout(() => {
+    document.getElementById('nome_tarefa').focus();}, 0);
 }
 
 function fecharModal() {
@@ -131,13 +136,19 @@ async function salvarTarefa(e) {
     const custo = parseFloat(document.getElementById('custo').value);
     const dataLimite = document.getElementById('data_limite').value;
 
-    if (!nomeTarefa || !custo || !dataLimite) {
+    if (!nomeTarefa || isNaN(custo) || !dataLimite) {
         alert('Todos os campos são obrigatórios!');
         return;
     }
     
     if (custo < 0) {
         alert('O custo deve ser maior ou igual a zero!');
+        return;
+    }
+    const LIMITE_MAXIMO = 999999999999.99;
+
+    if (custo > LIMITE_MAXIMO) {
+        alert('O valor do custo é muito alto. Informe um valor menor.');
         return;
     }
 
