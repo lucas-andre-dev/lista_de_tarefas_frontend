@@ -187,6 +187,8 @@ async function incluirTarefa(nomeTarefa, custo, dataLimite) {
     };
 
     try {
+        teste = JSON.stringify(novaTarefa);
+        alert(teste.custo)
         const response = await fetch(URL_BASE, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
