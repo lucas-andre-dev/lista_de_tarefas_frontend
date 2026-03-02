@@ -225,14 +225,13 @@ tfoot td {
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus {
     outline: none;
     border-color: #30cfd0;
-    border:5px solid #30cfd0 ;
-    box-shadow: #30cfd0;
+    box-shadow: 0 0 6px rgba(48, 207, 208, 0.6);
 }
 
 .form-actions {
