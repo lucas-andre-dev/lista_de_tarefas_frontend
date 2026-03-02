@@ -232,6 +232,7 @@ tfoot td {
     outline: none;
     border-color: #30cfd0;
     border:25px solid #30cfd0 ;
+    box-shadow: #30cfd0;
 }
 
 .form-actions {
