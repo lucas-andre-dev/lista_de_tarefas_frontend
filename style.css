@@ -231,6 +231,7 @@ tfoot td {
 .form-group input:focus {
     outline: none;
     border-color: #30cfd0;
+    border:5px solid #30cfd0 ;
 }
 
 .form-actions {
