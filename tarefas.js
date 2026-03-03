@@ -128,8 +128,9 @@ async function salvarTarefa(e) {
     e.preventDefault();
     
     const nomeTarefa = document.getElementById('nome_tarefa').value.trim();
-    const custo = parseFloat(document.getElementById('custo').value);
+    const custo = parseFloat(document.getElementById('custo').value).toString();
     const dataLimite = document.getElementById('data_limite').value;
+
 
     if (!nomeTarefa || isNaN(custo) || !dataLimite) {
         alert('Todos os campos são obrigatórios!');
