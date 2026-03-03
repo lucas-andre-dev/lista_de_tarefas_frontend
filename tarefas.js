@@ -23,6 +23,7 @@ function configurarEventos() {
     btnCancelar.addEventListener('click', fecharModal);
     formModal.addEventListener('submit', salvarTarefa);
 
+}
 
 async function carregarTarefas() {
     try {
