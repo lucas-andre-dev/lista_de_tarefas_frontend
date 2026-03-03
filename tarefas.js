@@ -23,12 +23,6 @@ function configurarEventos() {
     btnCancelar.addEventListener('click', fecharModal);
     formModal.addEventListener('submit', salvarTarefa);
 
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            fecharModal();
-        }
-    });
-}
 
 async function carregarTarefas() {
     try {
@@ -148,7 +142,7 @@ async function salvarTarefa(e) {
     const LIMITE_MAXIMO = 999999999999.99;
 
     if (custo > LIMITE_MAXIMO) {
-        alert('O Limite maximo de custo é R$ 99.999.999,99\nInforme um valor menor.');
+        alert('O Limite maximo de custo é R$ 999.999.999.999,99\nInforme um valor menor.');
         return;
     }
 
